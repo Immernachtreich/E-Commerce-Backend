@@ -1,0 +1,75 @@
+.home-buttons {
+    background-color: rgb(171, 203, 202);
+    height: 120px;
+}
+
+.home-buttons-latest-btn {
+
+    position: relative;
+    transform: translate(320%, -60%);
+    align-content: center;
+    height: 40px;
+
+    background-color: rgb(171, 203, 202);
+    text-align: center;
+    font-size: 20px;
+}
+
+.home-buttons-play-btn {
+    position: relative;
+    transform: translate(1015%, 100%);
+    border: none;
+    background: none;
+}
+
+.home-buttons-play-btn img {
+    width: 40px;
+    position: inherit;
+    top: 2px;
+}
+
+.tours {
+    position: relative;
+    margin: 0 20rem;
+    padding-bottom: 7rem;
+}
+
+.tours h4 {
+    position: relative;
+    left: 47%;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.tour-detail {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.tour-date {
+    width: 12%;
+    font-weight: bold;
+}
+
+.tour-place {
+    width: 25%;
+}
+
+.tour-stadium{
+    width: 50%;
+}
+
+.buy-tickets-btn {
+    margin: 0.3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(171, 203, 202);
+    height: 30px;
+    width: 100px;
+    color: rgb(71, 71, 71);
+}
+
+.buy-tickets-btn:hover {
+    background-color: rgba(171, 203, 202, 0.5);
+}

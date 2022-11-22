@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+.orders-heading {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.orders-section {
+    background-color: rgb(220, 211, 211);
+    height: 50%;
+    font-family: inherit;
+
+    font-family: 'Work Sans', sans-serif;
+}
+
+.per-order-div {
+    display: flex;
+    margin-bottom: 1rem;
+    height: 300px;
+    border-bottom: 3px solid wheat;
+}
+
+.per-order-div h4 {
+    position: relative;
+}
+
+.per-order-product-div {
+    position: relative;
+}
+
+.per-order-product-image-div {
+    position: relative;
+    top: 20%;
+    right: 40%;
+}
+
+.per-order-product-image-div img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin: 1rem 2rem;
+
+    border: 5px solid rgb(158, 199, 214);
+
+    position: relative;
+    top: 30%;
+}
+
+.per-order-product-details-div {
+    position: relative;
+    top: 20%;
+    right: 20%;
+}
+
+
+.per-order-total-div span{
+    position: relative;
+    top: 90%;
+    right: 50%;
+    font-weight: bold;
+}

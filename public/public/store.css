@@ -1,0 +1,137 @@
+.music-container {
+    text-align: center;
+}
+
+.merch-container {
+    text-align: center;
+}
+
+.Album-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-right: 15rem;
+    margin-left: 25rem;
+    margin-bottom: 5rem;
+}
+
+.img-cont img{
+    width: 300px;
+    height: 300px;
+    margin: 0.5rem 3rem;
+}
+
+
+.product-details{
+    position: relative;
+    right: 17%;
+    font-weight: 300;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.shop-btn {
+    position: relative;
+    left: 38%;
+    background-color: rgb(171, 203, 202);
+    border: none;
+    font-family: inherit;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+.shop-btn:hover {
+    background-color: rgba(171, 203, 202, 0.5);
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-right: 15rem;
+    margin-left: 25rem;
+    margin-bottom: 2rem;
+}
+
+.cart-button-div {
+    position: relative;
+    left: 45%;
+    margin-bottom: 2rem;
+}
+
+.cart-button-div-button {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(171, 203, 202);
+    border: none;
+    font-family: inherit;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.cart-button-div-button:hover {
+    background-color: rgba(171, 203, 202, 0.5);
+}
+
+* {
+    font-weight: normal;
+}
+
+.main-header-nav-button {
+    position: relative;
+    left: 72%;
+    height: 40px;
+    width: 80px;
+    background-color: rgb(171, 203, 202);
+    border: none;
+    font-family: inherit;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.main-header-nav-button:hover {
+    background-color: rgba(171, 203, 202, 0.5);
+}
+
+.notification-add {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin: 1rem;
+    height: 80px;
+    width: 300px;
+    background-color: rgb(171, 203, 202);
+    color: black;
+    border-radius: 5px;
+    text-align: left;
+    font-family: inherit;
+}
+
+#notification {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.page-buttons {
+    position: relative;
+    left: 45%;
+    margin: 1rem 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #4980ef;
+    background-color: rgb(171, 203, 202);
+    border-radius: 10px;
+}
+
+.page-buttons:hover,
+.page-buttons:active {
+    background-color: #4980ef;
+    color: white;
+}
+
+.page-buttons.active {
+    background-color: #4980ef;
+    color: white;
+}
+
+

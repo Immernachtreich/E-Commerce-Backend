@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Store </title>
+
+        <link rel="stylesheet" href="../public/main.css">
+        <link rel="stylesheet" href="../public/store.css">
+        <link rel="stylesheet" href="../public/cartitems.css">
+        <link rel="stylesheet" href="../public/cart.css">
+    </head>
+
+    <body>
+
+        <header class="main-header">
+            <nav class="main-header-nav">
+
+                <ul class="main-header-nav-ul">
+
+                    <li class="main-header-nav-ul-li"> 
+                        <a href="index.html"> Home</a>
+                    </li>
+
+                    <li class="main-header-nav-ul-li"> 
+                        <a href=""> Store </a>
+                    </li>
+
+                    <li class="main-header-nav-ul-li"> 
+                        <a href="orders.html"> Orders </a>
+                    </li>
+
+                    <li class="main-header-nav-ul-li"> 
+                        <a href="about.html"> About </a>
+                    </li>
+
+                </ul>
+
+                <button class="main-header-nav-button" id="top-cart-btn"> Cart </button>
+            </nav>
+
+        </header>
+
+        <div class="title-div">
+            <h1>The Generics</h1>
+        </div>
+
+        <div id="shop-section">
+            <section class="music-container">
+
+                <h2>MUSIC</h2>
+    
+                <div class="Album-container" id="Album-container">
+    
+                    <!-- <div class="Album-1">
+                        <h3>Album 1</h3>
+                        <div class="img-cont">
+                            <img class="product-imgs" src="https://cdn.dribbble.com/users/702789/screenshots/16900790/media/628a8bb9f58f4feaea51367fc58b32a3.png?compress=1&resize=400x300" alt="Album-1">
+                        </div>
+                        <div class="product-details">
+                            <span>$<span>12.99</span></span>
+                            <button class="shop-btn" type='button'>ADD TO CART</button>
+                        </div>
+                    </div>
+    
+                    <div class="Album-2">
+                        <h3>Album 2</h3>
+                        <div class="img-cont">
+                            <img class="product-imgs" src="https://static-cse.canva.com/blob/930590/1600w-SHmclOCsKQ8.jpg" alt="Album-2">
+                        </div>
+                        <div class="product-details">
+                            <span>$<span>14.99</span></span>
+                            <button class="shop-btn" type='button'>ADD TO CART</button>
+                        </div>
+                    </div>
+    
+                    <div class="Album-3">
+                        <h3>Album 3</h3>
+                        <div class="img-cont">
+                            <img class="product-imgs" src="https://i.pinimg.com/originals/ea/1f/64/ea1f64668a0af149a3277db9e9e54824.jpg" alt="Album-3">
+                        </div>
+                        <div class="product-details">
+                            <span>$<span>9.99</span></span>
+                            <button class="shop-btn" type='button'>ADD TO CART</button>
+                        </div>
+                    </div>
+    
+                    <div class="Album-4">
+                        <h3>Album 4</h3>
+                        <div class="img-cont">
+                            <img class="product-imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWGF0VXhGf-HuJHF0XtnRfTZB7PZbN0EX3fw&usqp=CAU" alt="Album-4">
+                        </div>
+                        <div class="product-details">
+                            <span>$<span>19.99</span></span>
+                            <button class="shop-btn" type='button'>ADD TO CART</button>
+                        </div>
+                    </div> -->
+    
+                </div>
+    
+            </section>
+    
+            <section class="merch-container">
+                <!-- <h2>MERCH</h2> -->
+                <div class="product-container" id="product-container">
+                    <!-- <div>
+                        <h3>T-Shirt</h3>
+                        <div class="img-cont">
+                            <img class="product-imgs" src="https://i2.wp.com/supremeshirts.in/wp-content/uploads/2020/03/d4d09489-7a3b-468b-a5d5-abfdc615219c.jpg?fit=893%2C1280&ssl=1" alt="T-shirt">
+                        </div>
+                        <div class="product-details">
+                            <span>$<span>19.99</span></span>
+                            <button class="shop-btn" type='button'>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Coffee Cup</h3>
+                        <div class="img-cont">
+                            <img class="product-imgs" src="https://rukminim1.flixcart.com/image/416/416/kqgyhe80/mug/o/m/k/guitar-printed-black-coffee-mug-music-coffee-mug-guitar-music-original-imag4gyxv53knyqc.jpeg?q=70" alt="Mug">
+                        </div>
+                        <div class="product-details">
+                            <span>$<span>6.99</span></span>
+                            <button class="shop-btn" type='button'>ADD TO CART</button>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+    
+            <div class="cart-button-div" id="cart-button-div">
+                <button class="cart-button-div-button" id="bottom-cart-btn"> See Cart </button>
+            </div>
+
+            <section class="cart-nav" id="navCart">
+
+                <h2>Cart</h2>
+
+                <button class="close" id="close-btn">X</button>
+
+                <ul class="cart-list">
+                    <li class="cart-list_item" id="cart-list_item-id">Item</li>
+                    <li class="cart-list_item">Price</li>
+                    <li class="cart-list_item">Quantity</li>
+                </ul>
+
+                <ul class="cart-items-ul" id="cart-items-ul">
+
+                </ul>
+                
+                <button class="purchase" id="purchase-button"> Purchase </button>
+
+                <div class="total-div" id="total-div">
+                    Total: 0
+                </div>
+
+                <div id="cart-page-buttons-div">
+                    <!-- <button class="cart-page-buttons"> 1 </button>
+                    <button class="cart-page-buttons"> 2 </button>
+                    <button class="cart-page-buttons"> 3 </button> -->
+                </div>
+
+            </section>
+
+            <div id="page-buttons-div">
+                <!-- <button class="page-buttons"> 1 </button>
+                <button class="page-buttons"> 2 </button>
+                <button class="page-buttons"> 3 </button> -->
+            </div>
+            
+            
+            <div id="notification"></div>
+            
+        </div>
+        
+
+        <footer class="main-footer">
+            <nav class="main-footer-nav">
+
+                <div class="main-footer-nav-div">
+                    <h3> The Generics</h3>
+                </div>
+
+                <ul class="main-footer-nav-ul">
+
+                    <li class="main-footer-nav-ul-li">
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img class="img-class" src="https://cdn.pixabay.com/photo/2016/11/19/03/08/youtube-1837872__340.png" alt="Youtube">
+                        </a>
+                        
+                    </li>
+
+                    <li class="main-footer-nav-ul-li">
+                        <a href="https://spotify.com/" target="_blank">
+                            <img src="https://e7.pngegg.com/pngimages/158/639/png-clipart-spotify-streaming-media-logo-playlist-spotify-app-icon-logo-music-download-thumbnail.png" alt="Spotify">
+                        </a>
+                        
+                    </li>
+
+                    <li class="main-footer-nav-ul-li">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688__340.png" alt="Facebook">
+                        </a>
+                        
+                    </li>
+
+                </ul>
+
+            </nav>
+        </footer>
+    </body>
+    <script src="../scripts/store.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</html>
