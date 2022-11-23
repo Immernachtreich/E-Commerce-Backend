@@ -3,6 +3,8 @@ const bodyParser= require('body-parser'); // Body-Parser Import
 const cors = require('cors'); // Cors Import
 const dotenv = require('dotenv') //Dotenv Import
 
+const path = require('path');
+
 dotenv.config();
 
 
@@ -32,7 +34,12 @@ app.use(bodyParser.json({ extended: false })); // Initializing Body Parser
 // Product Routes
 app.use('/products', productRoutes);
 app.use('/cart', cartRoutes);
-app.use('/orders', orderRoutes)
+app.use('/orders', orderRoutes);
+
+app.use((req, res, next) => {
+
+    res.sendFile(path.join(__dirname, `public/${req.url}`));
+})
 
 // Error Routes
 app.use((req, res) => {
