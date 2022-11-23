@@ -7,10 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
 async function getOrders(page) {
 
     // Contains orderId and total Price
-    const orderDetails = await axios.get('http://13.233.110.169:5010/orders/get-order-details?page=' + page);
+    const orderDetails = await axios.get('http://3.6.57.177/orders/get-order-details?page=' + page);
     
     // Contains a nested array of all the productdetails
-    const ordersProducts = await axios.get('http://13.233.110.169:5010/orders/get-orders');
+    const ordersProducts = await axios.get('http://3.6.57.177/orders/get-orders');
 
     const ordersSection = document.getElementById('orders-section');
 
