@@ -1,3 +1,6 @@
+// URL
+const URL = 'http://13.200.0.23';
+
 const ordersSection = document.getElementById('orders-section');
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -7,10 +10,10 @@ window.addEventListener('DOMContentLoaded', () => {
 async function getOrders(page) {
 
     // Contains orderId and total Price
-    const orderDetails = await axios.get('http://3.6.57.177/orders/get-order-details?page=' + page);
+    const orderDetails = await axios.get(URL + '/orders/get-order-details?page=' + page);
     
     // Contains a nested array of all the productdetails
-    const ordersProducts = await axios.get('http://3.6.57.177/orders/get-orders');
+    const ordersProducts = await axios.get(URL + '/orders/get-orders');
 
     const ordersSection = document.getElementById('orders-section');
 

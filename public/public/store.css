@@ -121,6 +121,7 @@
     border: 2px solid #4980ef;
     background-color: rgb(171, 203, 202);
     border-radius: 10px;
+    color: whitesmoke;
 }
 
 .page-buttons:hover,

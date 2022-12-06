@@ -1,3 +1,6 @@
+// URL
+const URL = 'http://13.200.0.23';
+
 const nav = document.getElementById('navCart'); // Navigation Bar
 
 // Buttons
@@ -63,7 +66,7 @@ async function addToCart(e) {
     if(e.target.classList.contains('shop-btn')) {
         const albumDiv = e.target.parentElement.parentElement;
 
-        const url = 'http://3.6.57.177/products/get-product/' + albumDiv.id;
+        const url = URL + '/products/get-product/' + albumDiv.id;
         
         try{
             const product = await axios.get(url);
@@ -84,7 +87,7 @@ async function addToCart(e) {
                 quantity: 1
             }
 
-            const response = await axios.post('http://3.6.57.177/cart/add-to-cart', productInfo);
+            const response = await axios.post(URL + '/cart/add-to-cart', productInfo);
 
             if(response.data.alreadyExisting) {
 
@@ -132,7 +135,7 @@ async function removeItemFromtCart(e) {
 
             const li = e.target.parentElement;
 
-            const url = 'http://3.6.57.177/cart/delete-product/' + li.id;
+            const url = URL + '/cart/delete-product/' + li.id;
 
             const response = await axios.post(url);
 
@@ -161,7 +164,7 @@ async function getProducts(page) {
     try {
 
         // Getting Music Products
-        const musics = await axios.get('http://3.6.57.177/products/get-musics?page=' + page);
+        const musics = await axios.get(URL + '/products/get-musics?page=' + page);
 
         musicDiv.innerHTML = "";
 
@@ -189,7 +192,7 @@ async function getProducts(page) {
         })
 
         // Getting Merches Products
-        // const merches = await axios.get('http://3.6.57.177/products/get-merches?page=' + page);
+        // const merches = await axios.get(URL + '/products/get-merches?page=' + page);
 
         // merchDiv.innerHTML = "";
 
@@ -229,7 +232,7 @@ async function getCartProducts(page) {
     try{
 
         // Getting Cart Products
-        const cartItems = await axios.get('http://3.6.57.177/cart/get-products/?page=' + page);
+        const cartItems = await axios.get(URL + '/cart/get-products/?page=' + page);
         cartList.innerHTML = "";
 
         let totalPrice = 0;
@@ -270,7 +273,7 @@ async function purchaseItems(e) {
         
         try{
 
-            const response = await axios.post('http://3.6.57.177/orders/add-order');
+            const response = await axios.post(URL + '/orders/add-order');
 
             cartList.innerHTML = "";
 
